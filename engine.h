@@ -27,7 +27,6 @@ public:
 			throw std::exception("Engine exception: no such command");
 		}
 		
-		//auto wrapper = static_cast<Wrapper*>(command);
 		return command->execute(args);
 	}
 };
